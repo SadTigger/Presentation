@@ -9,15 +9,148 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/style.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>REACT</h1>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" alt="logo" width="200px">
+				</section>
+				<section id="crossroad">
+					<a href="#/what"><p>What is React?</p></a>
+					<a href="#/why"><p>Why is React?</p></a>
+					<a href="#/when"><p>When or where we can use it?</p></a>
+				</section>
+				<section id="what">
+					<section>
+						<h3>What is React?</h3>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>also known as React.js or ReactJS</p>
+							</li>
+							<li>
+								<p>an open-source front-end JavaScript library for building user interfaces (specifically for single-page applications) or UI components.</p>
+							</li>
+							<li>
+								library !== framework
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section id="why">
+					<section>
+						<h3>Why is React?</h3>
+					</section>
+					<section>
+						<h4>JSX</h4>
+						<pre><code>const element = <h1>Hello, {name}</h1>;</code></pre>
+						<p>
+							It is called JSX, and it is a syntax extension to JavaScript. 
+							We recommend using it with React to describe what the UI should look like.
+							JSX may remind you of a template language, but it comes with the full power of JavaScript.
+						</p>
+						<p>Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both.</p>
+						<p>React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code.
+						It also allows React to show more useful error and warning messages.</p>
+					</section>
+					<section>
+						<h4>Components</h4>
+						<p>The simplest way to define a component is to write a JavaScript function:</p>
+						<pre><code>
+function Welcome(props) {
+	return <h1>Hello, {props.name}</h1>;
+}
+						</code></pre>
+
+						<p>You can also use an ES6 class to define a component:</p>
+						<pre><code>
+class Welcome extends React.Component {
+	render() {
+		return <h1>Hello, {this.props.name}</h1>;
+	}
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4 id="virtual-dom">Virtual Document Object Model</h4>
+						<p style="font-size: 18px;">Every time you call setState method, a new Virtual DOM is generated, this is diffed with the old virtual DOM producing a minimum set of changes on real DOM</p>
+						<img src="https://i1.wp.com/programmingwithmosh.com/wp-content/uploads/2018/11/lnrn_0201.png?fit=1173%2C785&ssl=1" alt="virtual-dom" width="50%">
+					</section>
+					<section>
+						<h5>Cross-platform Mobile Apps (React Native)</h5>
+						<p style="font-size: 18px;">React has native libraries that were announced by Facebook in 2015, which provides the react architecture to native applications like IOS, Android and UPD.</p>
+						<p style="font-size: 18px;">React-native is a mobile apps building framework using only Javascript.
+							It uses the same design as React, letting you utilize/include a rich mobile UI library/ declarative components.
+							It uses the same fundamental UI building blocks as regular iOS and Android apps.
+							The best part of using react-native is to allow/adopt components written in Objective-C, Java, or Swift.
+					 </p>
+					</section>
+				</section>
+				<section id="when">
+					<section>
+						<h3>When or where we can use it?</h3>
+					</section>
+					<section>
+						<ul style="font-size: 16px;">
+							<li>
+								Blogs (Gatsby)
+							</li>
+							<li>
+								Business websites
+							</li>
+							<li>
+								Portfolios
+							</li>
+							<li>
+								Forums
+							</li>
+							<li>
+								Rating websites
+							</li>
+							<li>
+								Membership sites
+							</li>
+							<li>
+								eLearning modules
+							</li>
+							<li>
+								Galleries
+							</li>
+							<li>
+								Personal websites for self-promotion
+							</li>
+							<li>
+								Job boards
+							</li>
+							<li>
+								Business directories
+							</li>
+							<li>
+								Q&A websites like Quora
+							</li>
+							<li>
+								Non-profit websites for collecting donations
+							</li>
+							<li>
+								Wikis and knowledge bases
+							</li>
+							<li>
+								Media-centric sites like YouTube
+							</li>
+							<li>
+								Auction and coupon sites
+							</li>
+						</ul>
+					</section>
+				</section>
 			</div>
 		</div>
 
